@@ -23,15 +23,18 @@ To ensure training stability, we applied R1 gradient penalty regularization. The
 
 ![R1 Gradient Penalty](generated_outputs/plots/r1_penalty.png)
 
-### 3. Training Duration per Epoch
-Training was accelerated using float16/bfloat16 mixed precision. The epoch time stabilized at an average of **32.9 seconds** per epoch:
+---
 
-![Epoch Training Duration](generated_outputs/plots/epoch_time.png)
+## 📊 Metrics Summary
 
-### 4. Memory Utilization Profile
-Hardware utilization remained flat and leak-free, with system RAM at **4.3 GB** and GPU VRAM capped at **10.59 GB**:
-
-![Memory Profile](generated_outputs/plots/memory_usage.png)
+| Metric | Minimum | Maximum | Final Value (Epoch 500) | Stable Average |
+| :--- | :--- | :--- | :--- | :--- |
+| **Discriminator Loss** | 1.2552 | 2.0334 | 1.9983 | 1.9965 |
+| **Generator Loss** | -0.8451 | 0.8577 | -0.3629 | -0.3200 |
+| **R1 Penalty** | $9.58 \times 10^{-6}$ | $6.36 \times 10^{-4}$ | $1.45 \times 10^{-5}$ | $2.20 \times 10^{-5}$ |
+| **Epoch Duration** | 29.89s | 69.66s | 32.97s | 32.89s |
+| **VRAM Usage** | 10.58 GB | 10.59 GB | 10.59 GB | 10.59 GB |
+| **System RAM** | 4.24 GB | 4.38 GB | 4.31 GB | 4.30 GB |
 
 ---
 
