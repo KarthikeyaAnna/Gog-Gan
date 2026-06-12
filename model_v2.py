@@ -1,12 +1,6 @@
 """
-Dog-GAN V2 (Unconditional): High-Capacity GAN Architecture
-
-Key improvements over V1:
-  1. Much wider channel schedule — minimum 64ch even at 256x256
-  2. Spectral normalization in Generator for training stability
-  3. Self-attention at TWO resolutions (16x16 and 32x32)
-  4. Deeper residual blocks with skip connections
-  5. Unconditional generation (no text embeddings)
+Generator and Discriminator architecture definitions.
+Features self-attention layers, spectral normalization, and residual blocks.
 """
 
 import torch

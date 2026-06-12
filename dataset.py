@@ -1,8 +1,5 @@
 """
-Dog-GAN Dataset Module
-
-Downloads and prepares the Stanford Dogs dataset with text captions
-generated from breed names. Uses OpenCLIP for text encoding.
+Dataset classes and utilities for loading images (AFHQ Dog or local datasets).
 """
 
 import os

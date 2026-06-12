@@ -1,13 +1,6 @@
 """
-Dog-GAN Training Script
-
-Trains an unconditional GAN on Stanford Dogs dataset.
-Uses hinge loss, R1 gradient penalty, and exponential moving average.
-
-Optimized for RTX 2050 (4GB VRAM):
-  - Mixed precision training (FP16)
-  - Gradient accumulation
-  - No CLIP encoder overhead
+Training script for the unconditional dog face GAN.
+Uses hinge loss with R1 regularization and EMA for the generator weights.
 """
 # Auto-install dependencies on Colab VM
 import subprocess
