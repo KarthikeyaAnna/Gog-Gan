@@ -44,6 +44,8 @@ To ensure training stability, we applied R1 gradient penalty regularization. The
 | **Discriminator Loss** | 1.2552 | 2.0334 | 1.9983 | 1.9965 |
 | **Generator Loss** | -0.8451 | 0.8577 | -0.3629 | -0.3200 |
 | **R1 Penalty** | $9.58 \times 10^{-6}$ | $6.36 \times 10^{-4}$ | $1.45 \times 10^{-5}$ | $2.20 \times 10^{-5}$ |
+| **FID Score (2048 samples)** | — | — | **25.1106** | — |
+| **Inception Score (2048 samples)** | — | — | **6.5519 ± 0.3451** | — |
 | **VRAM Usage** | 10.58 GB | 10.59 GB | 10.59 GB | 10.59 GB |
 | **System RAM** | 4.24 GB | 4.38 GB | 4.31 GB | 4.30 GB |
 

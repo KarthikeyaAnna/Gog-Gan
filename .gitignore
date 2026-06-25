@@ -1,0 +1,17 @@
+# PyTorch weights / checkpoints
+*.pt
+*.pth
+
+# Python compilation caches
+__pycache__/
+*.pyc
+
+# Locally generated outputs
+generated_outputs/epoch_0500_4x4_samples.png
+
+# Scripts
+generate_4x4.py
+evaluate_metrics.py
+
+# OS metadata
+.DS_Store
